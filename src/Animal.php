@@ -3,7 +3,7 @@ abstract class Animal {
 // PROPERTIES
 
     // PRIVATE
-    private $name;
+    private string $name;
 
 // METHODS
 
@@ -13,7 +13,14 @@ abstract class Animal {
     }
 
     // PUBLIC
-    public function getName() {
+    public function getName(): string {
         return $this->name;
     }
+
+    public function noise(): string {
+        return $this->getNoise();
+    }
+
+    // PROTECTED
+    abstract protected function getNoise(): string;
 }
