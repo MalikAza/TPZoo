@@ -1,6 +1,19 @@
 <?
+namespace App;
+
+$shouts = array(
+    "elephant" => "toooooout",
+    "zebra" => "hiiiii",
+    "fish" => "bloubloublou",
+    "whale" => "splash",
+    "parrot" => "coco",
+    "dove" => "Rou rouuu"
+);
+
+// ABC CLASS
 abstract class Animal {
 // PROPERTIES
+    // PUBLIC
 
     // PRIVATE
     private string $name;
