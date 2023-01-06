@@ -1,6 +1,8 @@
 <?php
 namespace App;
 
+/* The Zoo class is a container for three Enclosure objects, each of which is a container for Animal
+objects */
 class Zoo {
 // PROPERTIES
     private static Enclosure $aquarium;
@@ -14,6 +16,7 @@ class Zoo {
         $this::$fence = new Enclosure;
     }
     // PUBLIC
+        // GETTERS
     public function getAquarium(): Enclosure {
         return $this::$aquarium;
     }
@@ -26,6 +29,14 @@ class Zoo {
         return $this::$fence;
     }
 
+        // MISC
+
+    /**
+     * > If the animal can fly, add it to the aviary. If it can walk, add it to the fence. If it can swim,
+     * add it to the aquarium
+     * 
+     * @param Animal animal The animal to be added to the zoo.
+     */
     public function addAnimal(Animal $animal): void {
         switch(array_values(class_implements($animal))[0]) {
 
@@ -43,6 +54,10 @@ class Zoo {
         }
     }
 
+    /**
+     * It checks if there are any animals in the aviary, fence, or aquarium, and if there are, it
+     * prints out the aviary, fence, or aquarium
+     */
     public function visitZoo(): void {
         $message = "";
         // aviary

@@ -2,6 +2,7 @@
 namespace App;
 require __DIR__ . '/vendor/autoload.php';
 
+/* Creating an array of animals. */
 $animals = [
     new Animals\Fish('Fish1'),
     new Animals\Fish('Fish2'),
@@ -31,6 +32,7 @@ $animals = [
     new Animals\Dove('Dove2')
 ];
 
+/* Creating a new zoo, adding animals to the zoo, and then visiting the zoo. */
 $zoo = new Zoo;
 
 foreach($animals as $animal) {
