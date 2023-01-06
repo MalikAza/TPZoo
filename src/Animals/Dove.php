@@ -3,7 +3,8 @@ namespace App\Animals;
 
 class Dove extends \App\Animal {
 // PROPERTIES
-    protected $noise = 'Rou Rouuu';
+    // PROTECTED
+    use \App\isDove;
 // METHODS
     // PUBLIC
     use \App\canFly;

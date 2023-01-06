@@ -1,8 +1,35 @@
 <?php
 namespace App;
 
+// TRAITS
+    // NOISES
+trait isFish {
+    protected $noise = 'bloubloublou';
+}
+
+trait isElephant {
+    protected $noise = 'toooooout';
+}
+
+trait isZebra {
+    protected $noise = 'hiiiii';
+}
+
+trait isWhale {
+    protected $noise = 'splash';
+}
+
+trait isParrot {
+    protected $noise = 'coco';
+}
+
+trait isDove {
+    protected $noise = 'Rou Rouuu';
+}
+
+    // ENCLOSURE
 trait canFly {
-    public function enclos(): string {
+    public function enclosure(): string {
         return "Aviary";
     }
 }

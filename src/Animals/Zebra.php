@@ -3,7 +3,8 @@ namespace App\Animals;
 
 class Zebra extends \App\Animal {
 // PROPERTIES
-    protected $noise = 'hiiiii';
+    // PROTECTED
+    use \App\isZebra;
 // METHODS
 
     // PROTECTED

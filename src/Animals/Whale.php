@@ -3,7 +3,8 @@ namespace App\Animals;
 
 class Whale extends \App\Animal {
 // PROPERTIES
-    private $noise = 'splash';
+    // PROTECTED
+    use \App\isWhale;
 // METHODS
 
     // PROTECTED

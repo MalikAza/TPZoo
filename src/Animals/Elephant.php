@@ -3,7 +3,8 @@ namespace App\Animals;
 
 class Elephant extends \App\Animal {
 // PROPERTIES
-    protected $noise = 'toooooout';
+    // PROTECTED
+    use \App\isElephant;
 // METHODS
 
     // PROTECTED

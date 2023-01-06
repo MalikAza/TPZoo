@@ -3,7 +3,8 @@ namespace App\Animals;
 
 class Parrot extends \App\Animal {
 // PROPERTIES
-    protected $noise = 'coco';
+    // PROTECTED
+    use \App\isParrot;
 // METHODS
     // PUBLIC
     use \App\canFly;
