@@ -1,13 +1,17 @@
 <?php
 namespace App\Animals;
 
-class Parrot extends \App\Animal {
+class Parrot
+    extends \App\Animal
+    implements \App\canFly {
 // PROPERTIES
     // PROTECTED
     use \App\isParrot;
 // METHODS
     // PUBLIC
-    use \App\canFly;
+    public function enclosure(): string {
+        return 'Aviary';
+    }
     // PROTECTED
 	protected function getNoise(): string {
         return $this->noise;

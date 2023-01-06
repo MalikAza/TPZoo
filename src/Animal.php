@@ -28,10 +28,8 @@ trait isDove {
 }
 
     // ENCLOSURE
-trait canFly {
-    public function enclosure(): string {
-        return "Aviary";
-    }
+interface canFly {
+    public function enclosure(): string;
 }
 
 // ABC CLASS
