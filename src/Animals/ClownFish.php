@@ -1,7 +1,9 @@
 <?php
 namespace App\Animals;
 
-class ClownFish extends Fish {
+class ClownFish
+    extends Fish
+    implements \App\CanSwim {
 // PROPERTIES
     // PROTECTED
     use \App\isFish;

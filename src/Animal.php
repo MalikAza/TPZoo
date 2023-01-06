@@ -28,9 +28,9 @@ trait isDove {
 }
 
     // ENCLOSURE
-interface canFly {
-    public function enclosure(): string;
-}
+interface CanFly{};
+interface CanWalk{};
+interface CanSwim{};
 
 // ABC CLASS
 abstract class Animal {
