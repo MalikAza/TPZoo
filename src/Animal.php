@@ -1,6 +1,12 @@
 <?php
 namespace App;
 
+trait canFly {
+    public function enclos(): string {
+        return "Aviary";
+    }
+}
+
 // ABC CLASS
 abstract class Animal {
 // PROPERTIES
