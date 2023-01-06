@@ -31,6 +31,10 @@ $animals = [
     new Animals\Dove('Dove2')
 ];
 
+$zoo = new Zoo;
+
 foreach($animals as $animal) {
-    echo "{$animal->getName()} : {$animal->noise()}\n";
+    $zoo->addAnimal($animal);
 }
+
+$zoo->visitZoo();

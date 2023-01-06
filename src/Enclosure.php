@@ -3,7 +3,7 @@ namespace App;
 
 class Enclosure {
 // PROPERTIES
-    static $animals = array();
+    public array $animals = [];
 
 // METHODS
     public function addAnimal(Animal $animal): void {
