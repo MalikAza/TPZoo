@@ -1,9 +1,9 @@
 <?php
-namespace App;
+namespace App\Animals;
 
-class BubbleFish extends Animal {
+class BubbleFish extends Fish {
 // PROPERTIES
-    private $noise = $shouts['fish'];
+
 // METHODS
 
     // PROTECTED
